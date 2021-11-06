@@ -1,0 +1,114 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem #000, 0 0 0 .3rem #FFF, 0 0 .4rem #000;
+}
+
+html {
+    --background: #2A2438;
+    --foreground: #EEE;
+    --card: #000;
+    --primary: #411E8F;
+}
+
+body {
+    margin: 2em;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Rubik;
+    font-size: 22px;
+}
+
+.card {
+    background: var(--card);
+    padding: 2em;
+    border-radius: 2em;
+    box-shadow: 0 0 2em #000;
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: .75em;
+}
+
+input {
+    background: var(--primary);
+    color: var(--foreground);
+    border: 0;
+    border-radius: 2em;
+    font-family: Rubik;
+    font-size: 1em;
+    padding: .25em 1em;
+    transition: all .1s ease;
+}
+
+button {
+    background: var(--primary);
+    color: var(--foreground);
+    border: 0;
+    border-radius: 2em;
+    font-family: Rubik;
+    font-size: 1em;
+    padding: .25em 1em;
+    transition: all .1s ease;
+}
+
+button:hover, button:focus {
+    transform: scale(1.1);
+}
+
+button.secondary {
+    background: var(--background);
+}
+
+button.close {
+    background: transparent;
+    color: inherit;
+    border-radius: 50%;
+    font-size: 2em;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+}
+
+.alert {
+    position: fixed;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1em 2em;
+    border-radius: 2em;
+    background: var(--card);
+    font-family: Rubik;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 2em #000;
+}
+
+.me-1 {
+    margin-inline-end: 1em;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 2em 0 1em 0;
+    gap: 1em;
+}
+
+#alert {
+    visibility: hidden;
+}

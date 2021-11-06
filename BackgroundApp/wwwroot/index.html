@@ -2,19 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-        body {
-            margin: 0;
-            background: #2A2438;
-            color: #FFF;
-            font-size: 20px;
-        }
-    </style>
+    <title>Background App</title>
+    <link href="/app.css" rel="stylesheet">
 </head>
 <body>
-    <file-explorer></file-explorer>
-    <script src="/file-explorer.js" type="module"></script>
+    <div class="card">
+        <h1 class="card-title">📁 File explorer</h1>
+        <div class="d-flex">
+            <button id="back" class="me-1">⬅ Back</button>
+            <input id="path" readonly class="flex-grow-1">
+        </div>
+        <ul id="list"></ul>
+    </div>
+
+    <div id="alert" class="alert" role="alert">
+        <span class="me-1">✨ A new version is available.</span>
+        <button id="update" class="me-1">Update</button>
+        <button id="close" class="close">&times;</button>
+    </div>
+
+    <script src="/app.js" type="module"></script>
 </body>
 </html>
